@@ -1,5 +1,15 @@
 def heapsort(arr):
-  pass
+  heap = Heap()
+
+  sorted_list = []
+
+  for num in arr:
+        heap.insert(num)
+
+  while heap.size > 0:
+        sorted_list.insert(0, heap.delete())
+
+  return sorted_list
 
 class Heap:
   def __init__(self):
@@ -43,3 +53,5 @@ class Heap:
       return index * 2
     else:
       return index * 2 if self.storage[index * 2] > self.storage[index * 2 + 1] else index * 2 + 1
+
+s = heapsort([35, 7, 26, 100, 15, 111])

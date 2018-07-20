@@ -1,6 +1,6 @@
 Add your answers to the Algorithms exercises here.
 
-Excercise I.
+Exercise I.
 a) O(n)
 b) O(logn)
 c) O(logn)
@@ -9,7 +9,7 @@ e) O(n^3)
 f) O(n)
 g) O(n)
 
-Excercise II.
+Exercise II.
 
 
 Exercise III.
