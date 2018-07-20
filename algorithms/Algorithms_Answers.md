@@ -3,15 +3,25 @@ Add your answers to the Algorithms exercises here.
 Exercise I.
 a) O(n)
 b) O(logn)
-c) O(logn)
-d) O(n^2)
-e) O(n^3)
-f) O(n)
+c) O(logn) correct answer -> O square root of n
+d) O(n^2) correct answer -> O(log n)
+e) O(n^3) 
+f) O(n) 
 g) O(n)
 
 Exercise II.
-a)
+a) 
+#j is larger than i
+#j comes after i
+minVal = a[0]
+maxDiff = 0
+for i in n
+    minVal = min(minVal, a[i])
+    maxDiff = max(masDiff, a[i] - minVal)
+return maxDiff
 b)
+#can use a binary search
+
 MAX_FLOOR = 100
 
 def safest_egg_drop_floor(n):
@@ -56,4 +66,6 @@ def main():
 
 Exercise III.
 a) It would be O(n^2) even though it has already been sorted it still has to compare two numbers.
+#already sorted: looks like [1, 2, 3, 4, 5, 6, 7]
 b) I feel like if the pivot is always the middle it should be quicker than a pivot in the beginning due to the placement although I'm not sure of the runtime. perhaps O(n).
+#correct answer: O(n log n)
